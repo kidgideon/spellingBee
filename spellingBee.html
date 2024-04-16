@@ -1,0 +1,70 @@
+  <!DOCTYPE html>
+  <html lang="en">
+  <head>
+     <link rel="stylesheet" href="spellingBee.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Spelling Bee App</title>
+  </head>
+  <body>
+        <div class="container">
+            <div class="header-component">
+                <p>Spelling Bee Challenge</p>
+           </div>
+      
+            <div class="overlay">
+       <div class="section-one">
+          <div class="speech-section">
+       <div class="image-span"><img onclick="malePronounciation()" src="images/mic.webp" alt=""></div>
+       <div class="direction">click and listen</div>
+      <div class="image-span">
+          <img onclick="femalePronounciation()" src="images/mic.webp" alt=""></div>
+      </span>
+          </div>
+      
+          <div class="answers-section">
+              <form action="#">
+                <span class="top">
+       <input class="user-inp" type="text" placeholder="spell what you hear">
+                </span>
+                <span class="bottom">
+     <button class="btn" onclick="compare()">compare</button>
+                </span>
+              </form>   
+          </div>
+      
+           <div class="grader">
+       <p class="grader-input"> You will be graded here</p>
+           </div>
+      </div>
+      
+      <div class="section-two">
+          <div class="point-area">
+      <div class="coin-img">
+          <img src="images/coin.jpeg" alt="">
+          <span class="coin-bal"> 0 </span>
+              </div>
+      <div class="user-profile">
+          <span class="user-name">user</span>
+      </div>
+          </div>
+          <div class="rank-area">
+      <div><p class="">Total words:  <span class="words-spelt"></span></p></div>
+      <div><p class="">Total correct: <span class="correct-spelling"></span></p></div>
+      <div><p class="">Total incorrect: <span class="wrong-spelling"></span></p></div>
+      <div><p class="">You are : <span class="grade"></span></p></div>
+          </div>
+      </div>
+            </div>
+            <p class="docs">Documentation</p>
+            <ul>
+      <li>please write your spellings in small letter</li>
+      <li>the maximum point you can reach is 200 points</li>
+            </ul>
+        </div>
+
+        <audio class="win" src="sounds/sucess.mp3"></audio>
+        <audio class="fail" src="sounds/fail.mp3"></audio>
+     <script src="spellingBee.js"></script>
+  </body>
+  </html>

@@ -1,0 +1,224 @@
+    body {
+       padding: 0px;
+       margin: 0px;
+       font-family: sans-serif;
+       background-color: rgb(97, 4, 97);
+    }
+   .container {
+     width: 100%;
+     background-color: transparent;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+   }
+
+   .header-component {
+     width: 100%;
+     height: 60px;
+     background-color: black;
+     color: yellow;
+     text-align: center;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     border-radius: 10px;
+     margin-top: 5px;
+     font-size: 150%;
+     font-weight: bold;
+   }
+
+   .overlay {
+     width: 95%;
+     height: 100%;
+     display: grid;
+     grid-template-columns: 1fr 1fr;
+     margin-top: 10px;
+     padding: 10px;
+     column-gap: 10px;
+     row-gap: 10px;
+       }
+
+      .section-one {
+        background-color: white;
+        border-radius: 10px;
+        padding: 10px;
+      }
+
+      .speech-section {
+         width: 100%;
+         display: flex;
+         flex-direction: row;
+         align-items: center;
+         justify-content: space-evenly;
+         margin-bottom: 20px;
+      }
+
+      .speech-section img {
+         width: 80px;
+         border-radius: 100%;
+      }
+
+      .direction {
+         font-weight: bold;
+         color: blueviolet;
+      }
+
+      .answers-section {
+         width: 100%;
+         height: 20%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+      }
+
+      .answers-section input {
+         width: 100%;
+         border: 10px;
+         height: 40px;
+         font-size: 20px;
+         outline: none;
+         border: none;
+         font-weight: bold;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         text-align: center;
+      }
+
+       .answers-section input::placeholder {
+        text-align: center;
+       }
+
+      .answers-section button {
+        width: 100px;
+        height: 40px;
+        background-color: black;
+        color: yellow;
+        border-radius: 5px;
+      }
+
+      .grader-input {
+        margin-top: 40px;
+         text-align: center;
+         font-size: 16px;
+         color: gray;
+      }
+
+      .section-two {
+          background-color: white;
+          border-radius: 10px;
+          padding: 10px;
+          
+      }
+      .point-area {
+         width: 100%;
+         display: flex;
+         justify-content: space-evenly;
+         align-items: center;
+         flex-direction: row;
+         gap: 10px;
+      }
+
+      .point-area img {
+         width: 100px;
+      }
+
+      .coin-img {
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         font-weight: bold;
+         font-size: 17px;
+      }
+
+      .user-profile {
+         background-color: black;
+         width: 60%;
+         color: yellow;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         height: 40px;
+         font-weight: bold;
+         border-radius: 10px;
+      }
+
+      .rank-area {
+         background-color: black;
+         color: yellow;
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         flex-direction: column;
+         padding: 2px;
+         border-radius: 10px;
+         font-weight: bold;
+      }
+
+      .words-spelt {
+         color: blue;
+         font-size: 18px;
+      }
+
+      .correct-spelling {
+        color: green;
+        font-size: 18px;
+      }
+
+      .wrong-spelling {
+        color: red;
+        font-size: 18px;
+      }
+
+      .grade {
+         color: lightblue;
+      }
+      .top {
+         width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin-top: 10px;
+         margin-bottom: 10px;
+      }
+
+      .bottom {
+        width: 100%;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin-top: 10px;
+         margin-bottom: 10px;
+      }
+
+      .docs {
+        color: white;
+        font-weight: bold;
+      }
+
+      ul {
+        font-weight: bold;
+        color: white;
+      }
+
+      @Media screen and (max-width: 900px) and (min-width: 10px) {
+
+        .overlay {
+          width: 95%;
+          height: 100%;
+          display: grid;
+          grid-template-columns: 1fr;
+          margin-top: 10px;
+          padding: 10px;
+          column-gap: 10px;
+            }
+
+            .speech-section img {
+              width: 50px;
+              border-radius: 100%;
+           }
+      
+
+      }
